@@ -21,4 +21,4 @@ for row in reader:
     img = np.array(Image.open('./data/train/masks/' + row['id'] + '.png'))
     rle = rle_encoding(img)
     rle_st = ' '.join(map(str,rle))
-    f.write(row['id'] + ',' + rle_st + '\n')
+    f.write(row['id'] + ',' + rle_st + "\n")
